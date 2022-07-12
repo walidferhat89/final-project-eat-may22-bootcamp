@@ -50,7 +50,7 @@ String amazonDecodeNewUser = utility.decode(properties.getProperty("newAmazon.us
         homePage.clickGoToNewRegionWebPage();
         Assert.assertEquals("Amazon.it",homePage.getNewRegionPageHeader());
     }
-    /*@Test*/
+    @Test
     public void createNewAcc() throws Exception {
         excelReader excelReader = new excelReader("C:\\Users\\walid\\IdeaProjects\\framework-selenium-practice\\data\\amazoneData.xlsx","sheet1");
         homePage home = new homePage(driver);

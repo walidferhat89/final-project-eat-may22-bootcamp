@@ -34,3 +34,22 @@
 22:18:52.196 [main] INFO  pages.homePage - Alert message: Enter your email or mobile phone number
 22:19:22.586 [main] INFO  pages.loginPage - amazon devices dep Page Header: Amazon Devices
 22:19:27.866 [main] INFO  pages.loginPage - item chosen get clicked
+23:28:35.442 [main] INFO  pages.homePage - hovered over flag button
+23:29:16.392 [main] INFO  pages.homePage - Amazon logo is displayed: true
+23:29:22.871 [main] INFO  pages.homePage - home page logo text: 
+23:30:00.366 [main] INFO  pages.homePage - sign button is clicked
+23:30:00.903 [main] INFO  pages.homePage - create a new account page header title: Create account
+23:30:01.208 [main] INFO  pages.homePage - customer name entered
+23:30:01.549 [main] INFO  pages.homePage - user name entered
+23:30:01.602 [main] INFO  pages.homePage - Alert message: 
+23:30:18.526 [main] INFO  pages.homePage - sign button is clicked
+23:30:59.496 [main] INFO  pages.homePage - sign button is clicked
+23:31:02.006 [main] INFO  pages.loginPage - account page header: 
+23:31:20.464 [main] INFO  pages.homePage - sign button is clicked
+23:31:20.776 [main] INFO  pages.loginPage - user name field is displayed:true
+23:31:24.457 [main] INFO  pages.loginPage - password field is displayed: true
+23:31:24.510 [main] INFO  pages.loginPage - sign in btn is displayed: true
+23:31:46.802 [main] INFO  pages.homePage - sign button is clicked
+23:32:12.982 [main] INFO  pages.homePage - sign button is clicked
+23:32:13.518 [main] INFO  pages.homePage - Alert message: Enter your email or mobile phone number
+23:32:51.386 [main] INFO  pages.loginPage - amazon devices dep Page Header: Amazon Devices

@@ -25,6 +25,8 @@ public class shopPage extends commonApi {
     WebElement itemChosenToPurchase;
     @FindBy(css = "#add-to-cart-button")
     WebElement addToCartBtn;
+    @FindBy(css = "*[class='a-button-text a-text-left']")
+    WebElement addToCartButton2;
     @FindBy(xpath = "//*[@id='abb-intl-pop-cta']/span[3]/span/input")
     WebElement noCoverageBtn;
     @FindBy(xpath = "//*[@id='sw-atc-details-single-container']/div[2]/div[1]/span")
@@ -50,7 +52,7 @@ public class shopPage extends commonApi {
         LOG.info("item chosen get clicked");
     }
     public void clickAddToCartBtn(){
-        clickBtn(addToCartBtn);
+        clickBtn(addToCartButton2);
         LOG.info("add to cart button clicked");
     }
 
