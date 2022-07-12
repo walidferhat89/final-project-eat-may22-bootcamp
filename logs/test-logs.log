@@ -1,0 +1,36 @@
+21:36:56.828 [main] INFO  pages.homePage - hovered over flag button
+21:37:13.336 [main] INFO  pages.homePage - Amazon logo is displayed
+21:37:36.806 [main] INFO  pages.homePage - home page logo text: 
+21:38:09.885 [main] INFO  pages.homePage - sign button is clicked
+21:38:10.654 [main] INFO  pages.homePage - create a new account page header title: Create account
+21:38:10.870 [main] INFO  pages.homePage - customer name entered
+21:38:10.987 [main] INFO  pages.homePage - user name entered
+21:38:11.083 [main] INFO  pages.homePage - Alert message: 
+21:38:48.254 [main] INFO  pages.homePage - sign button is clicked
+21:39:18.481 [main] INFO  pages.homePage - sign button is clicked
+21:39:18.481 [main] INFO  pages.loginPage - user name field is displayed
+21:39:22.832 [main] INFO  pages.loginPage - password field is displayed
+21:39:22.875 [main] INFO  pages.loginPage - sign in btn is displayed
+21:39:40.474 [main] INFO  pages.homePage - sign button is clicked
+21:40:00.573 [main] INFO  pages.homePage - sign button is clicked
+21:40:00.806 [main] INFO  pages.homePage - Alert message: Enter your email or mobile phone number
+21:40:39.453 [main] INFO  pages.loginPage - amazon devices dep Page Header: Amazon Devices
+22:15:52.777 [main] INFO  pages.homePage - hovered over flag button
+22:16:19.272 [main] INFO  pages.homePage - Amazon logo is displayed: true
+22:16:26.696 [main] INFO  pages.homePage - home page logo text: 
+22:17:05.925 [main] INFO  pages.homePage - sign button is clicked
+22:17:06.546 [main] INFO  pages.homePage - create a new account page header title: Create account
+22:17:06.707 [main] INFO  pages.homePage - customer name entered
+22:17:06.816 [main] INFO  pages.homePage - user name entered
+22:17:06.854 [main] INFO  pages.homePage - Alert message: 
+22:17:24.519 [main] INFO  pages.homePage - sign button is clicked
+22:17:45.826 [main] INFO  pages.homePage - sign button is clicked
+22:18:15.137 [main] INFO  pages.homePage - sign button is clicked
+22:18:15.188 [main] INFO  pages.loginPage - user name field is displayed:true
+22:18:18.816 [main] INFO  pages.loginPage - password field is displayed: true
+22:18:18.860 [main] INFO  pages.loginPage - sign in btn is displayed: true
+22:18:35.795 [main] INFO  pages.homePage - sign button is clicked
+22:18:52.086 [main] INFO  pages.homePage - sign button is clicked
+22:18:52.196 [main] INFO  pages.homePage - Alert message: Enter your email or mobile phone number
+22:19:22.586 [main] INFO  pages.loginPage - amazon devices dep Page Header: Amazon Devices
+22:19:27.866 [main] INFO  pages.loginPage - item chosen get clicked

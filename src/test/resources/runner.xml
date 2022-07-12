@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name ="amazon test" >
+    <parameter name="useCloud" value="false"> </parameter>
+    <parameter name="env" value="sauceLabs"> </parameter>
+    <parameter name="os" value="win"> </parameter>
+    <parameter name="osVersion" value="11"> </parameter>
+    <parameter name="browser" value="chrome"> </parameter>
+    <parameter name="browserVersion" value="102"> </parameter>
+    <parameter name="url" value="https://www.amazon.com/"> </parameter>
+
+<test name="basicComp">
+<classes>
+    <class name="com.amazon.homePageTest" />
+</classes>
+</test>
+
+    <test name="loginTest">
+        <classes>
+            <class name="com.amazon.loginPageTest" />
+        </classes>
+    </test>
+
+    <test name="shoppingTest">
+        <classes>
+            <class name="com.amazon.shoppingTest" />
+        </classes>
+    </test>
+
+</suite>
