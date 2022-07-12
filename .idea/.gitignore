@@ -2,7 +2,7 @@
 /shelf/
 /workspace.xml
 
-/.idea\
-extent-report\
+.idea\
+
 target\
 *.iml\
