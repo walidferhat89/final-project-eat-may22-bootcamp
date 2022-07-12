@@ -1,1 +1,10 @@
-com\amazon\commonApi.class
+pages\homePage.class
+reporting\ExtentManager.class
+reporting\ExtentTestManager.class
+pages\loginPage.class
+reporting\TestLogger.class
+reporting\utility\connectDB.class
+reporting\utility\excelReader.class
+reporting\utility\utility.class
+pages\shopPage.class
+Base\commonApi.class

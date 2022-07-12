@@ -1,2 +1,3 @@
-practice\selenium.class
-com\amazon\basicComponent.class
+com\amazon\shoppingTest.class
+com\amazon\loginPageTest.class
+com\amazon\homePageTest.class

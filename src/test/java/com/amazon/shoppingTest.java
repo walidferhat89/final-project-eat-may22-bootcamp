@@ -8,9 +8,10 @@ import pages.shopPage;
 
 public class shoppingTest extends commonApi {
 
+
     @Test
     public void addItemsToCart(){
-        shopPage shop = new shopPage(driver);
+        shopPage shop = new shopPage(getDriver());
 
         shop.chooseFromDepartmentDropBox("Amazon Devices");
         shop.searchInTextBox("Amazon Fire TV 65\" Omni Series 4K UHD smart TV with Dolby Vision, hands-free with Alexa");

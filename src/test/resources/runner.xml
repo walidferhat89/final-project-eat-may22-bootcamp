@@ -17,6 +17,7 @@
     <test name="loginTest">
         <classes>
             <class name="com.amazon.loginPageTest" />
+
         </classes>
     </test>
 

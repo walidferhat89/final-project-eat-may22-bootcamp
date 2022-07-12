@@ -51,7 +51,7 @@ public class homePage extends commonApi {
     WebElement homePageLogo;
     @FindBy(css = "#createAccountSubmit")
     WebElement createNewAccountBtn;
-    @FindBy(css = "//*[@id='cvf-page-content']/div/div/div/div[1]/span")
+    @FindBy(xpath= "//*[@id='cvf-page-content']/div/div/div/div[1]/span")
     WebElement solvePuzzleMsg;
     @FindBy(css = "*[class='icp-nav-flag icp-nav-flag-us']")
     WebElement flagBtn;

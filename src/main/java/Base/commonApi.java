@@ -32,7 +32,7 @@ import reporting.utility.utility;
 
 public class commonApi {
 
-    public WebDriver driver;
+    private WebDriver driver;
     protected Properties properties = utility.loadProperties();
     /*Logger LOG = LogManager.getLogger(commonApi.class.getName());*/
 
@@ -167,6 +167,9 @@ public class commonApi {
         }
     }
 
+    public WebDriver getDriver(){
+        return driver;
+    }
     public String getTitle() {
         System.out.println(driver.getTitle());
         return driver.getTitle();

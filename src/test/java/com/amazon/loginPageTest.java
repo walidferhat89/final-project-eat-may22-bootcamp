@@ -17,8 +17,8 @@ public class loginPageTest extends commonApi {
 
 @Test
     public void loginPageComponentAreDisplayed() throws InterruptedException {
-        loginPage login = new loginPage(driver);
-        homePage home = new homePage(driver);
+        loginPage login = new loginPage(getDriver());
+        homePage home = new homePage(getDriver());
 
         home.clickHomePageSigninBtn();
         Assert.assertTrue(login.checkUsernameField());
@@ -30,8 +30,8 @@ public class loginPageTest extends commonApi {
     }
     @Test
     public void logInWithValidCrd(){
-        loginPage login = new loginPage(driver);
-        homePage home = new homePage(driver);
+        loginPage login = new loginPage(getDriver());
+        homePage home = new homePage(getDriver());
 
         home.clickHomePageSigninBtn();
         login.typeUserNameAndEnter(DecodeAmazonUserName);
@@ -44,8 +44,8 @@ public class loginPageTest extends commonApi {
 
     @Test
     public void loginWithInvalidUserName(){
-        loginPage login = new loginPage(driver);
-        homePage home = new homePage(driver);
+        loginPage login = new loginPage(getDriver());
+        homePage home = new homePage(getDriver());
 
         home.clickHomePageSigninBtn();
         login.typeUserNameAndEnter(" ");
@@ -54,8 +54,8 @@ public class loginPageTest extends commonApi {
     }
    @Test
     public void loginWithInvalidPassword(){
-        loginPage login = new loginPage(driver);
-        homePage home = new homePage(driver);
+        loginPage login = new loginPage(getDriver());
+        homePage home = new homePage(getDriver());
 
         home.clickHomePageSigninBtn();
         login.typeUserNameAndEnter(DecodeAmazonUserName);

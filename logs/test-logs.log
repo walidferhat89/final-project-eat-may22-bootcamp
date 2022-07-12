@@ -53,3 +53,66 @@
 23:32:12.982 [main] INFO  pages.homePage - sign button is clicked
 23:32:13.518 [main] INFO  pages.homePage - Alert message: Enter your email or mobile phone number
 23:32:51.386 [main] INFO  pages.loginPage - amazon devices dep Page Header: Amazon Devices
+00:27:01.980 [main] INFO  pages.homePage - hovered over flag button
+00:27:20.587 [main] INFO  pages.homePage - Amazon logo is displayed: true
+00:27:27.364 [main] INFO  pages.homePage - home page logo text: 
+00:28:18.057 [main] INFO  pages.homePage - sign button is clicked
+00:28:20.066 [main] INFO  pages.homePage - create a new account page header title: Create account
+00:28:20.588 [main] INFO  pages.homePage - customer name entered
+00:28:20.696 [main] INFO  pages.homePage - user name entered
+00:28:20.741 [main] INFO  pages.homePage - Alert message: 
+00:29:35.018 [main] INFO  pages.homePage - sign button is clicked
+00:29:40.186 [main] INFO  pages.loginPage - account page header: 
+00:30:05.597 [main] INFO  pages.homePage - sign button is clicked
+00:30:06.400 [main] INFO  pages.loginPage - user name field is displayed:true
+00:30:11.226 [main] INFO  pages.loginPage - password field is displayed: true
+00:30:11.283 [main] INFO  pages.loginPage - sign in btn is displayed: true
+00:30:44.400 [main] INFO  pages.homePage - sign button is clicked
+00:31:09.603 [main] INFO  pages.homePage - sign button is clicked
+00:31:10.381 [main] INFO  pages.homePage - Alert message: Enter your email or mobile phone number
+00:31:43.865 [main] INFO  pages.loginPage - amazon devices dep Page Header: Amazon Devices
+00:34:02.847 [main] INFO  pages.homePage - hovered over flag button
+00:34:19.966 [main] INFO  pages.homePage - Amazon logo is displayed: true
+00:34:25.904 [main] INFO  pages.homePage - home page logo text: 
+00:35:04.216 [main] INFO  pages.homePage - sign button is clicked
+00:35:04.785 [main] INFO  pages.homePage - create a new account page header title: Create account
+00:35:04.988 [main] INFO  pages.homePage - customer name entered
+00:35:05.106 [main] INFO  pages.homePage - user name entered
+00:35:05.444 [main] INFO  pages.homePage - Alert message: 
+00:35:23.786 [main] INFO  pages.homePage - sign button is clicked
+00:35:57.726 [main] INFO  pages.homePage - sign button is clicked
+00:36:00.012 [main] INFO  pages.loginPage - account page header: 
+00:36:15.890 [main] INFO  pages.homePage - sign button is clicked
+00:36:15.942 [main] INFO  pages.loginPage - user name field is displayed:true
+00:36:19.714 [main] INFO  pages.loginPage - password field is displayed: true
+00:36:19.767 [main] INFO  pages.loginPage - sign in btn is displayed: true
+00:36:35.210 [main] INFO  pages.homePage - sign button is clicked
+00:36:52.909 [main] INFO  pages.homePage - sign button is clicked
+00:36:53.075 [main] INFO  pages.homePage - Alert message: Enter your email or mobile phone number
+00:37:21.498 [main] INFO  pages.loginPage - amazon devices dep Page Header: Amazon Devices
+00:37:27.094 [main] INFO  pages.loginPage - item chosen get clicked
+00:37:29.184 [main] INFO  pages.loginPage - add to cart button clicked
+00:37:29.184 [main] INFO  pages.loginPage - no thanks button clicked
+03:32:32.450 [main] INFO  pages.homePage - sign button is clicked
+03:32:46.419 [main] INFO  pages.homePage - create a new account page header title: Create account
+03:32:46.715 [main] INFO  pages.homePage - customer name entered
+03:32:46.942 [main] INFO  pages.homePage - user name entered
+03:32:47.045 [main] INFO  pages.homePage - password entered
+03:32:48.076 [main] INFO  pages.homePage - password reentered
+03:36:34.472 [main] INFO  pages.homePage - sign button is clicked
+03:36:37.091 [main] INFO  pages.homePage - create a new account page header title: Create account
+03:36:37.221 [main] INFO  pages.homePage - customer name entered
+03:36:37.423 [main] INFO  pages.homePage - user name entered
+03:36:37.543 [main] INFO  pages.homePage - password entered
+03:36:40.749 [main] INFO  pages.homePage - password reentered
+03:36:41.343 [main] INFO  pages.homePage - Solve this puzzle to protect your account
+03:40:52.981 [main] INFO  pages.homePage - hovered over flag button
+03:41:12.927 [main] INFO  pages.homePage - Amazon logo is displayed: true
+03:41:17.313 [main] INFO  pages.homePage - home page logo text: 
+15:46:18.630 [main] INFO  pages.homePage - sign button is clicked
+15:46:21.838 [main] INFO  pages.loginPage - account page header: 
+15:46:50.890 [main] INFO  pages.homePage - sign button is clicked
+15:46:52.333 [main] INFO  pages.loginPage - user name field is displayed:true
+15:46:57.111 [main] INFO  pages.loginPage - password field is displayed: true
+15:46:57.167 [main] INFO  pages.loginPage - sign in btn is displayed: true
+15:47:21.110 [main] INFO  pages.homePage - sign button is clicked

@@ -2,6 +2,9 @@ package reporting.utility;
 
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoDatabase;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import pages.homePage;
 
 import java.io.IOException;
 import java.sql.*;
@@ -10,6 +13,7 @@ import java.util.List;
 import java.util.Properties;
 
 public class connectDB {
+    Logger LOG = LogManager.getLogger(connectDB.class.getName());
     public static MongoDatabase mongoDatabase = null;
 
     public static Connection connect = null;
@@ -26,13 +30,13 @@ public class connectDB {
         String password = utility.decode(properties.getProperty("MYSQLJDBC.password"));
         Class.forName(driverClass);
         connect = DriverManager.getConnection(url,userName,password);
-        System.out.println("Database is connected");
+        LOG.info("Database is connected");
         return connect;
     }
     public MongoDatabase connectToMongoDB() {
         MongoClient mongoClient = new MongoClient();
         mongoDatabase = mongoClient.getDatabase("students");
-        System.out.println("Database Connected");
+        LOG.info("Database Connected");
 
         return mongoDatabase;
     }
@@ -113,4 +117,21 @@ public class connectDB {
         }
         return list;
     }
+
+    /*public static void main(String[] args) throws Exception {
+        connectDB connectDB = new connectDB();
+//        Statement statement = connectDB.connectToMySql().createStatement();
+//
+//        ResultSet resultSet = statement.executeQuery("SELECT * FROM profile WHERE id = '1';");
+//
+//        while (resultSet.next()){
+//            System.out.println(resultSet.getString("name"));
+//        }
+
+
+        //System.out.println(name);
+
+        String names = connectDB.readDataBase("amzncredentials","username").get(0);
+        System.out.println(names);
+}*/
 }

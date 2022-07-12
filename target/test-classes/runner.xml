@@ -8,22 +8,23 @@
     <parameter name="browserVersion" value="102"> </parameter>
     <parameter name="url" value="https://www.amazon.com/"> </parameter>
 
-<test name="basicComp">
+<!--<test name="basicComp">
 <classes>
     <class name="com.amazon.homePageTest" />
 </classes>
-</test>
+</test>-->
 
     <test name="loginTest">
         <classes>
             <class name="com.amazon.loginPageTest" />
+
         </classes>
     </test>
 
-    <test name="shoppingTest">
+   <!-- <test name="shoppingTest">
         <classes>
             <class name="com.amazon.shoppingTest" />
         </classes>
-    </test>
+    </test>-->
 
 </suite>

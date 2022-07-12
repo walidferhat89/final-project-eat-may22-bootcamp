@@ -1,8 +1,6 @@
 package reporting.utility;
 
-import Base.commonApi;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
@@ -31,13 +29,13 @@ public class utility  {
         byte[] decodedBytes = Base64.getDecoder().decode(key);
         return new String(decodedBytes);
     }
-    /*public static void main(String[] args) {
-        String originalStr = "mohamedWALID8991";
+    public static void main(String[] args) {
+        /*String originalStr = "mohamedWALID8991";
         String encyptedStr;
         encyptedStr = Base64.getEncoder().encodeToString(originalStr.getBytes());
-        System.out.println(encyptedStr);
+        System.out.println(encyptedStr);*/
 
-        *//*System.out.println(Utility.decode("c3RhbmRhcmRfdXNlcg=="));*//*
-    }*/
+        //System.out.println(utility.decode("YWJjZDEyMzQ="));
+    }
 }
 

@@ -8,7 +8,7 @@ import pages.shopPage;
 import reporting.utility.utility;
 import reporting.utility.connectDB;
 import reporting.utility.excelReader;
-import java.util.Properties;
+
 
 
 public class homePageTest extends commonApi {
@@ -26,8 +26,8 @@ String amazonDecodeNewUser = utility.decode(properties.getProperty("newAmazon.us
     @Test
     public void checkPresenceOfHomePageComp(){
         excelReader excelReader = new excelReader("C:\\Users\\walid\\IdeaProjects\\framework-selenium-practice\\data\\amazoneData.xlsx","sheet1");
-        homePage homePage = new homePage(driver);
-        shopPage shop = new shopPage(driver);
+        homePage homePage = new homePage(getDriver());
+        shopPage shop = new shopPage(getDriver());
 
         homePage.CheckHomePageLogo();
         Assert.assertEquals(excelReader.getDataForGivenKey("key","HomePageLogoText"),homePage.getHomePageLogoText());
@@ -38,7 +38,7 @@ String amazonDecodeNewUser = utility.decode(properties.getProperty("newAmazon.us
     @Test
     public void changeStore() throws InterruptedException {
 
-        homePage homePage = new homePage(driver);
+        homePage homePage = new homePage(getDriver());
 
         /*homePage.scrollToChangeStoreBtn();*/
         homePage.HoverOverFlagBtn();
@@ -53,11 +53,11 @@ String amazonDecodeNewUser = utility.decode(properties.getProperty("newAmazon.us
     @Test
     public void createNewAcc() throws Exception {
         excelReader excelReader = new excelReader("C:\\Users\\walid\\IdeaProjects\\framework-selenium-practice\\data\\amazoneData.xlsx","sheet1");
-        homePage home = new homePage(driver);
+        homePage home = new homePage(getDriver());
 
-        String dataBaseUsername = connectDB.readDataBase("cred","username").get(0);
-        String dataBasePassword = connectDB.readDataBase("cred","password").get(0);
-
+       /* String dataBaseUsername = connectDB.readDataBase("amzncredentials","username").get(0);
+        String dataBasePassword = connectDB.readDataBase("amzncredentials","password").get(0);
+*/
         /*home.hoverOverHomePageSignInBtn();*/
         home.clickHomePageSigninBtn();
         home.clickCreateNewAccountBtn();
@@ -65,8 +65,8 @@ String amazonDecodeNewUser = utility.decode(properties.getProperty("newAmazon.us
         Assert.assertEquals(excelReader.getDataForGivenKey("key","CreateNewAccountPageHeader"),home.getCreateNewAccountPageHeader());
 
         home.typeFirstLastNameAndTabKey(utility.decode(properties.getProperty("newAmazon.firstAndLastName")));
-        home.typeUserNameAndTabKey(dataBaseUsername);
-        home.typeUserPasswordAndTabKey(utility.decode(properties.getProperty(dataBasePassword)) );
+        home.typeUserNameAndTabKey(utility.decode(properties.getProperty("newAmazon.username")));
+        home.typeUserPasswordAndTabKey(utility.decode(properties.getProperty("newAmazon.password")));
         home.retypeUserPasswordAndEnter(utility.decode(properties.getProperty("newAmazon.password")));
         Assert.assertEquals(excelReader.getDataForGivenKey("key","solve puzzle msg"),home.getSolvePuzzleMsg());
         /*home.clickVerifyEmailBtn();*/
@@ -75,7 +75,7 @@ String amazonDecodeNewUser = utility.decode(properties.getProperty("newAmazon.us
     @Test
     public void createAccWithInvalidEmail(){
         excelReader excelReader = new excelReader("C:\\Users\\walid\\IdeaProjects\\framework-selenium-practice\\data\\amazoneData.xlsx","sheet1");
-        homePage home = new homePage(driver);
+        homePage home = new homePage(getDriver());
 
         /*home.hoverOverHomePageSignInBtn();
         home.clickCreateNewAcc();*/
@@ -91,7 +91,7 @@ String amazonDecodeNewUser = utility.decode(properties.getProperty("newAmazon.us
     @Test
     public void createAccWithInvalidPassword(){
         excelReader excelReader = new excelReader("C:\\Users\\walid\\IdeaProjects\\framework-selenium-practice\\data\\amazoneData.xlsx","sheet1");
-        homePage home = new homePage(driver);
+        homePage home = new homePage(getDriver());
 
        /* home.hoverOverHomePageSignInBtn();
         home.clickCreateNewAcc();*/
