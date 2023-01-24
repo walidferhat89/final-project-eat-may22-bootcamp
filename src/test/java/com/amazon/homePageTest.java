@@ -30,7 +30,7 @@ String amazonDecodeNewUser = utility.decode(properties.getProperty("newAmazon.us
         shopPage shop = new shopPage(getDriver());
 
         homePage.CheckHomePageLogo();
-        Assert.assertEquals(excelReader.getDataForGivenKey("key","HomePageLogoText"),homePage.getHomePageLogoText());
+        Assert.assertEquals(homePage.getHomePageLogoText(),excelReader.getDataForGivenKey("key","HomePageLogoText"));
         shop.checkSearchTextBox();
         homePage.checkFlagBtn();
 
@@ -45,10 +45,10 @@ String amazonDecodeNewUser = utility.decode(properties.getProperty("newAmazon.us
         homePage.clickChangeStoreBtn();
         homePage.getChangingStorePageHeader();
 
-        Assert.assertEquals("Website (Country/Region)",homePage.getChangingStorePageHeader());
+        Assert.assertEquals(homePage.getChangingStorePageHeader(),"Website (Country/Region)");
         homePage.chooseStore("Italy (Italia)");
         homePage.clickGoToNewRegionWebPage();
-        Assert.assertEquals("Amazon.it",homePage.getNewRegionPageHeader());
+        Assert.assertEquals(homePage.getNewRegionPageHeader(),"Amazon.it");
     }
     @Test
     public void createNewAcc() throws Exception {
@@ -68,7 +68,7 @@ String amazonDecodeNewUser = utility.decode(properties.getProperty("newAmazon.us
         home.typeUserNameAndTabKey(utility.decode(properties.getProperty("newAmazon.username")));
         home.typeUserPasswordAndTabKey(utility.decode(properties.getProperty("newAmazon.password")));
         home.retypeUserPasswordAndEnter(utility.decode(properties.getProperty("newAmazon.password")));
-        Assert.assertEquals(excelReader.getDataForGivenKey("key","solve puzzle msg"),home.getSolvePuzzleMsg());
+        Assert.assertEquals(home.getSolvePuzzleMsg(),excelReader.getDataForGivenKey("key","solve puzzle msg"));
         /*home.clickVerifyEmailBtn();*/
 
     }
@@ -81,11 +81,11 @@ String amazonDecodeNewUser = utility.decode(properties.getProperty("newAmazon.us
         home.clickCreateNewAcc();*/
         home.clickHomePageSigninBtn();
         home.clickCreateNewAccountBtn();
-        Assert.assertEquals("Create account",home.getCreateNewAccountPageHeader());
+        Assert.assertEquals(home.getCreateNewAccountPageHeader(),"Create account");
 
         home.typeFirstLastNameAndTabKey(amazonDecodeFirstAndLast);
         home.typeUserNameAndTabKey(" ");
-        Assert.assertEquals(home.getMissingEmailAlert(),excelReader.getDataForGivenKey("key","missing email alert"));;
+        Assert.assertEquals(home.getMissingEmailAlert(),excelReader.getDataForGivenKey("key","missing email alert"));
 
     }
     @Test
@@ -97,12 +97,12 @@ String amazonDecodeNewUser = utility.decode(properties.getProperty("newAmazon.us
         home.clickCreateNewAcc();*/
         home.clickHomePageSigninBtn();
         home.clickCreateNewAccountBtn();
-        Assert.assertEquals("Create account",excelReader.getDataForGivenKey("key","missing password alert"));
+        Assert.assertEquals(excelReader.getDataForGivenKey("key","missing password alert"),"Create account");
 
         home.typeFirstLastNameAndTabKey(amazonDecodeFirstAndLast);
         home.typeUserNameAndTabKey(amazonDecodeNewUser);
         home.typeUserPasswordAndTabKey(" ");
-        Assert.assertEquals("Minimum 6 characters required",home.getMissingPasswordAlert());
+        Assert.assertEquals(home.getMissingPasswordAlert(),"Minimum 6 characters required");
 
     }
 

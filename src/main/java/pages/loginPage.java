@@ -11,6 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 public class loginPage extends commonApi {
     Logger LOG = LogManager.getLogger(loginPage.class.getName());
     public loginPage(WebDriver driver) {
+
         PageFactory.initElements(driver, this);
     }
 
@@ -21,12 +22,12 @@ public class loginPage extends commonApi {
     @FindBy(css = "*[id='ap_password']")
     WebElement passwordField;
     @FindBy(xpath = "//*[@id='header']/div/div/a/i")
-    WebElement logInAcountPageHeader;
+    WebElement logInAccountPageHeader;
 
 
     public String getLogInPageHeader(){
-        LOG.info("account page header: "+getelmText(logInAcountPageHeader));
-        return getelmText(logInAcountPageHeader);
+        LOG.info("account page header: "+getelmText(logInAccountPageHeader));
+        return getelmText(logInAccountPageHeader);
     }
     public boolean checkUsernameField() {
         LOG.info("user name field is displayed:" +isDisplayed(usernameField));
@@ -49,10 +50,12 @@ public class loginPage extends commonApi {
     }
 
     public void typeUserNameAndEnter(String username) {
+
         typeAndEnter(usernameField, username);
     }
 
     public void typePasswordAndEnter(String password) {
+
         typeAndEnter(passwordField, password);
     }
 

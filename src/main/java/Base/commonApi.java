@@ -10,6 +10,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
@@ -121,6 +123,7 @@ public class commonApi {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Long.parseLong(implicitWait)));
         driver.get(url);
+        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(5000));
         Thread.sleep(7000);
 
     }
@@ -168,6 +171,7 @@ public class commonApi {
     }
 
     public WebDriver getDriver(){
+
         return driver;
     }
     public String getTitle() {
@@ -198,6 +202,7 @@ public class commonApi {
         }
 
     public void typeAndEnter(WebElement element, String input) {
+
         element.sendKeys(input, Keys.ENTER);
     }
 
@@ -224,6 +229,7 @@ public class commonApi {
     public void dragAndDrop(WebDriver driver, WebElement draggable, WebElement droppable) {
         Actions action = new Actions(driver);
         action.dragAndDrop(draggable, droppable).build().perform();
+
     }
 
     public void clickWithActions(WebDriver driver, WebElement element) {
@@ -247,7 +253,7 @@ public class commonApi {
     }
 
         public void clickWithJS (WebElement element){
-            JavascriptExecutor js = (JavascriptExecutor) driver;
+            JavascriptExecutor js = (JavascriptExecutor)driver;
             js.executeAsyncScript("argument[0].click();", element);
 
         }
